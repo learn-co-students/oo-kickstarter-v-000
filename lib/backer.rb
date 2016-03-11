@@ -2,7 +2,7 @@ require 'pry'
 
 class Backer
 
-    attr_accessor :name, :back_project, :project, :backer, :backers, :projects
+    attr_accessor :name, :back_project, :backers #, :projects #:project, :backer,
 
   #  @backed_projects = [ ]
     #backed_projects should be an instance variable, not a class variable,
