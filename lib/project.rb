@@ -11,7 +11,4 @@ class Project
     name.backed_projects << self
   end
 
-  def back_project()
-  end
-
 end
