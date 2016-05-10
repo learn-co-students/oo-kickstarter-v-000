@@ -14,3 +14,7 @@ class Backer
 
 end
 
+
+backer = Backer.new("Avi")
+
+puts backer.name
