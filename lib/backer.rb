@@ -9,9 +9,8 @@ class Backer
   end  
 
   def back_project(name)
-    backed_projects << project_name
+    backed_projects << name
     name.backers << self
-    binding.pry
   end
 
 end
