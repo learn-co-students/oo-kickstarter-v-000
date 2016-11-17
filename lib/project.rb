@@ -8,10 +8,8 @@ class Project
   end
 
   def add_backer(backer)
-    if backer.is_a?(Backer)
-      @backers << backer
-      backer.back_project(self) unless backer.has_project?(self)
-    end
+    @backers << backer
+    backer.back_project(self) unless backer.has_project?(self)
   end
 
   def has_backer?(backer)
