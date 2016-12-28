@@ -6,4 +6,9 @@ class Project
     @title = title
     @backers = []
   end
+
+  def backer=(backer)
+    @backer = backer
+    backer.back_project(self)
+  end
 end
