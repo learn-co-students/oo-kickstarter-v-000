@@ -8,8 +8,9 @@ end
 
 def add_backer(name)
 @backers << name
-obj = Backer.new(name)
-obj.backed_projects << self
+
+name.backed_projects << self
+
 end
 
 end
