@@ -8,6 +8,7 @@ class Backer
   def initialize(name)
     @backed_projects = []
     @name = name
+    @@all << self
   end
 
   def self.all
