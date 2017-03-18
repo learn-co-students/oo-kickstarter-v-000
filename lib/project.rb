@@ -16,7 +16,7 @@ class Project
     # else
     #   backer.back_project(self)
     # end
-    project.backers << self
+    backer.backed_projects << self
   end
 
 end
