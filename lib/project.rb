@@ -7,8 +7,10 @@ class Project
   end
 
   def add_backer(backer)
-    @backers << backer
-    backer.back_project(self) unless backer.backed_projects.include?(self)
+    backers << backer
+    backer.backed_projects << self
+    #alternative solution with condition to avoid infinite loop
+    #backer.back_project(self) unless backer.backed_projects.include?(self)
   end
 
 end
