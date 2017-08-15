@@ -1,17 +1,14 @@
-class Project
-  attr_reader :title, :backers
+require 'pry'
 
+class Project
+  attr_accessor :title, :backers
   def initialize(title)
     @title = title
+    @backers = []
   end
-
-  def backers
-    pbs = ProjectBacker.all.select {|pb| pb.project == self}
-    pbs.map {|pb| pb.backer}
-  end
-
   def add_backer(backer)
-    ProjectBacker.new(self, backer)
-  end
+    @backers << backer
+    @backers[0].backed_projects << self
 
+  end
 end

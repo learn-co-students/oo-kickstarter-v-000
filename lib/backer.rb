@@ -1,20 +1,13 @@
 require 'pry'
 
 class Backer
-  attr_reader :name, :backed_projects
-
-
+  attr_accessor :name, :backed_projects
   def initialize(name)
     @name = name
+    @backed_projects = []
   end
-
-  def backed_projects
-    pbs = ProjectBacker.all.select {|pb| pb.backer == self}
-    pbs.map {|pb| pb.project}
-  end
-
   def back_project(project)
-    ProjectBacker.new(project, self)
+    @backed_projects << project
+    project.backers << self
   end
-
 end
