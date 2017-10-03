@@ -1,13 +1,16 @@
 class Project
-  attr_accessor :backers
+  attr_accessor :backers, :title
 
 
-initialize(title, backers)
-  @title = tile 
-#initialized with a variable, does that mean passed in, or liek this;
-  @backers = backers
-  @backers = []
+  def initialize(title)
+    @title = title
+    @backers = []
+  end
 
-def backers
+
+  def add_backer(backer)
+    backers << backer
+    backer.backed_projects << self
+  end
 
 end
