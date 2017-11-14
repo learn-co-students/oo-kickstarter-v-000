@@ -1,14 +1,16 @@
 class Backer
-    attr_accessor :name, :backed_projects
+    attr_accessor :name, :backed_projects, :project, :backer, :projects
    
     def initialize(name)
         @name = name
-        @backed_projects = []
+        @backed_projects = []        
     end
 
-    def back_project(title)
-        poppin_project = Project.new(title)
-        @backed_projects << poppin_project
+    def back_project(project)
+        @backed_projects << project
+        project.backers << self                   
     end
 
 end
+
+# @city = City.new(city_name, self)
