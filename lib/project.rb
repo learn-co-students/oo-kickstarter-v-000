@@ -12,8 +12,8 @@ class Project
 # # create add_backer method w/argument (Backer)
   # w/argument (Project)
   def add_backer(backer_name)
-    binding.pry
     @backers << backer_name
+    backer_name.backed_projects << self 
     
   end 
 end
