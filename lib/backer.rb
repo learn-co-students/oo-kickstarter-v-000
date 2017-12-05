@@ -13,7 +13,17 @@ class Backer
   end 
   
   def back_project(project_name)
+ 
+    # how do we get to the backers array
+    # add instance of Backer (backer object) to backers arry
+   
     @backed_projects << project_name
+    project_name.backers << self
+    # backers [Backer}
+    # backed_projects [Project]
+#    @backed_projects.each do |g|
+#      Project.backers << self
+#    end
   end 
   
   
