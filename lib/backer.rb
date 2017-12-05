@@ -4,7 +4,9 @@ require 'pry'
 class Backer 
   # create initialize method w/argument (name)
 # create add_backer method w/argument (Backer)
-
+  def initialize(name)
+    
+  end 
   
   
   
