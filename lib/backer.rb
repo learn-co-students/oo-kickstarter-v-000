@@ -10,6 +10,10 @@ class Backer
     @name = name
   end 
   
+  def add_backer(Backer)
+    
+  end 
+  
   
   
   
