@@ -1,11 +1,5 @@
 class Project
-#==========================================
-  # INSTANCE ATTRIBUTES
-#==========================================
 attr_accessor :title, :backers 
-#==========================================  
-  # INSTANCE
-#==========================================
   def initialize(title)
     self.title = title
     self.backers = []

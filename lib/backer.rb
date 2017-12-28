@@ -1,11 +1,5 @@
 class Backer
-#==========================================
-  # INSTANCE ATTRIBUTES
-#==========================================
 attr_accessor :name, :backed_projects 
-#==========================================  
-  # INSTANCE
-#==========================================
   def initialize(name)
     self.name = name
     self.backed_projects = []
