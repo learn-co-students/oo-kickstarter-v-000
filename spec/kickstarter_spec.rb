@@ -1,3 +1,5 @@
+require 'pry'
+
 describe 'Backer - ::new' do
   it 'takes a name on initialization' do
     backer = Backer.new("Avi")
@@ -16,7 +18,7 @@ describe 'Backer - #back_project' do
   it 'accepts a Project as an argument and stores it in a backed_projects array' do
     spencer = Backer.new("Spencer")
     magic = Project.new("Magic The Gathering Thing")
-
+    # binding.pry
     # If we are calling this method in this way, what type of argument is it taking?
     # We are actually passing in a Project object! Cool, huh?
     spencer.back_project(magic)
@@ -44,7 +46,7 @@ describe 'Backer - More Advanced #back_project' do
     logan = Backer.new("Logan")
     hoverboard = Project.new("Awesome Hoverboard")
     logan.back_project(hoverboard)
-
+    # binding.pry
     # If by this point, the project knows about a new backer, where does that mean
     # some more magic needs to happen? There's really only one place it can happen.
     expect(hoverboard.backers).to include(logan)
