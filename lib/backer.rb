@@ -11,6 +11,7 @@ class Backer
     project.backers << self
     #the above line. every time a backer adds a project to its backed_projects,
     #it should also add itself(the backer) to that project's list of bakers (an array set upon initialization of a new project)
+    #the second shovel depends on the project class having a backers collection.
   end
 
 end
