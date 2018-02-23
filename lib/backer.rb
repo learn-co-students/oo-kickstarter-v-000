@@ -12,5 +12,3 @@ class Backer
     end
 
 end
-
-# @city = City.new(city_name, self)
