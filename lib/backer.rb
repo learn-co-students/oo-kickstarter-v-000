@@ -11,13 +11,5 @@ class Backer
     project.backers << self
     @backed_projects << project
   end
-  # it 'also adds the backer to the project\'s backers array' do
-  #   logan = Backer.new("Logan")
-  #   hoverboard = Project.new("Awesome Hoverboard")
-  #   logan.back_project(hoverboard)
-  #
-  #   # If by this point, the project knows about a new backer, where does that mean
-  #   # some more magic needs to happen? There's really only one place it can happen.
-  #   expect(hoverboard.backers).to include(logan)
 
 end
