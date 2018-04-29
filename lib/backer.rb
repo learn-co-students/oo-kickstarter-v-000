@@ -9,11 +9,12 @@ class Backer
   end
 
   def back_project(project)
-    @backed_projects << project
-    if project.backers.any? { |x| x.name == self.name }
-      return
-    else
-      project.add_backer(self)
-    end
+    backed_projects << project
+    project.backers << self
+    # if project.backers.any? { |x| x.name == self.name }
+    #   return
+    # else
+    #   project.add_backer(self)
+    # end
   end
 end
