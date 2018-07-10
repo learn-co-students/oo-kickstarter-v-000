@@ -12,7 +12,4 @@ class Backer
     project.backers<<self unless project.backers.include?(self)
   end
 
-  def backed_projects
-    self.projects
-  end
 end
