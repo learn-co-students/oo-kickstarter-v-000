@@ -1,5 +1,5 @@
 #project.rb
-require 'pry'
+
 class Project
   attr_reader :backers, :title
 
