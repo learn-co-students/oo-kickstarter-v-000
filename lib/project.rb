@@ -12,3 +12,9 @@ class Project
   end
 
 end
+
+
+
+Project.new("ipod")
+jobs = Backer.new("Steve Jobs")
+ipod.add_backer(jobs)
