@@ -1,18 +1,18 @@
-puts describe 'Backer - ::new' do
+ describe 'Backer - ::new' do
   it 'takes a name on initialization' do
     backer = Backer.new("Avi")
     expect(backer.name).to eq("Avi")
   end
 end
 
-puts describe 'Project - ::new' do
+ describe 'Project - ::new' do
   it 'takes a title on initialization' do
     project = Project.new("Project With So Much Amaze")
     expect(project.title).to eq("Project With So Much Amaze")
   end
 end
 
-puts describe 'Backer - #back_project' do
+describe 'Backer - #back_project' do
   it 'accepts a Project as an argument and stores it in a backed_projects array' do
     spencer = Backer.new("Spencer")
     magic = Project.new("Magic The Gathering Thing")
@@ -25,7 +25,7 @@ puts describe 'Backer - #back_project' do
   end
 end
 
-puts describe 'Project - #add_backer' do
+ describe 'Project - #add_backer' do
   it 'accepts a Backer as an argument and stores it in a backers array' do
     book = Project.new("Ruby, Ruby, and More Ruby")
     steven = Backer.new("Steven")
@@ -39,7 +39,7 @@ puts describe 'Project - #add_backer' do
   end
 end
 
-puts describe 'Backer - More Advanced #back_project' do
+ describe 'Backer - More Advanced #back_project' do
   it 'also adds the backer to the project\'s backers array' do
     logan = Backer.new("Logan")
     hoverboard = Project.new("Awesome Hoverboard")
@@ -51,7 +51,7 @@ puts describe 'Backer - More Advanced #back_project' do
   end
 end
 
-puts describe 'Project - More Advanced #add_backer' do
+ describe 'Project - More Advanced #add_backer' do
   it 'also adds the project to the backer\'s backed_projects array' do
     ropes = Project.new("All The Ropes")
     arel = Backer.new("Arel")
